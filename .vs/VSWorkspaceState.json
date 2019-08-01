@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\controllers",
+    "\\helpers",
+    "\\models",
+    "\\passport",
+    "\\public",
+    "\\public\\css",
+    "\\views"
+  ],
+  "SelectedNode": "\\helpers\\Uservalidate.js",
+  "PreviewInSolutionExplorer": false
+}

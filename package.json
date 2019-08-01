@@ -1,0 +1,41 @@
+{
+  "name": "web_chat_application",
+  "version": "1.0.0",
+  "description": "A chat Application built with node, mongodb, express and socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harshit11Narula/Web_Chat_Application.git"
+  },
+  "author": "Harshit Narula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harshit11Narula/Web_Chat_Application/issues"
+  },
+  "homepage": "https://github.com/Harshit11Narula/Web_Chat_Application#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.0.0",
+    "cookie-parser": "^1.4.4",
+    "dependable": "^1.1.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-promise-router": "^3.0.3",
+    "express-session": "^1.16.2",
+    "express-validator": "^5.3.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.6.7",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
