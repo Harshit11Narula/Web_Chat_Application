@@ -6,9 +6,25 @@ module.exports = function (_, passport, Uservalidate) {
             router.get('/', this.indexPage);
             router.get('/signup', this.getSignUp);
             router.get('/home', this.homePage);
+            router.get('/auth/facebook', this.getFacebookLogin);
+            router.get('/auth/facebook/callback',
+                passport.authenticate('facebook', { failureRedirect: '/signup' }),
+                function (req, res) {
+                    res.redirect('/home');
+                });
 
-            router.post('/', Uservalidate.LoginValidation, this.postLogin);
+            router.get('/auth/google', this.getGoogleLogin);
+
+            router.get('/auth/google/callback',
+                passport.authenticate('google', { failureRedirect: '/signup' }),
+                function (req, res) {
+                    res.redirect('/home');
+                });
+  
+
+
             router.post('/signup', Uservalidate.SignupValidation, this.postSignUp);
+            router.post('/', Uservalidate.LoginValidation, this.postLogin);
             
         },
 
@@ -36,6 +52,19 @@ module.exports = function (_, passport, Uservalidate) {
             failureRedirect: '/signup',
             failureFlash: true
         }),
+
+        getFacebookLogin: passport.authenticate('facebook', {
+            session: false,
+            scope: 'email',
+        }),
+
+        getGoogleLogin: passport.authenticate('google', {
+            scope: ['https://www.googleapis.com/auth/plus.login', 'https://www.googleapis.com/auth/plus.profile.emails.read']
+        }),
+
+
+
+        
 
         homePage: function (req, res) {
             return res.render('home');
