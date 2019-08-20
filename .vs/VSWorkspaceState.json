@@ -7,8 +7,10 @@
     "\\passport",
     "\\public",
     "\\public\\css",
-    "\\views"
+    "\\public\\js",
+    "\\views",
+    "\\views\\admin"
   ],
-  "SelectedNode": "\\helpers\\Uservalidate.js",
+  "SelectedNode": "\\passport\\passport-facebook.js",
   "PreviewInSolutionExplorer": false
 }
