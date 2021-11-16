@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Harshit11Narula/Web_Chat_Application#readme",
   "dependencies": {
-    "aws-sdk": "^2.512.0",
+    "aws-sdk": "^2.814.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
